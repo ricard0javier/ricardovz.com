@@ -1,0 +1,6 @@
+{
+  "name": "RoomSeeker",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./RoomSeeker.js"
+}
