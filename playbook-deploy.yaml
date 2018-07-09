@@ -1,0 +1,14 @@
+---
+- name: install nginx
+  hosts: pi
+  become: true
+  roles:
+    - role: jdauphant.nginx
+
+  tasks:
+    - name: copy website
+      synchronize:
+        delete: yes
+        recursive: yes
+        src: build/
+        dest: /usr/share/nginx/html
